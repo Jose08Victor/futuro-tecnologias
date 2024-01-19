@@ -1,0 +1,103 @@
+header {
+    min-height: 100vh;
+    background-color: rgb(35, 204, 204);
+    display: flex;
+    position: relative;
+
+    &:after {
+        content: url('../../assets/seta_preta.png');
+        height: 35px;
+        bottom: 100px;
+        margin: 0 50%;
+        position: absolute;
+        animation: downarrow 0.6s infinite alternate ease-in-out;
+    }
+
+    @keyframes downarrow {
+        0% {
+            transform: translateY(0);
+            opacity: 0.4;
+        }
+
+        100% {
+            transform: translateY(0.4em);
+            opacity: 0.9;
+        }
+    }
+
+    img {
+        width: 70%;
+        object-fit: cover;
+    }
+
+    div {
+        border: 5px #fff solid;
+        max-width: 566px;
+        max-height: 344px;
+        position: absolute;
+        top: 20%;
+        right: 4%;
+        margin: 25px 25px 95px;
+
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 400;
+            line-height: 1.1;
+            margin: 20px 20px 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 1em 28px;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        min-height: 100vh;
+
+        img {
+            width: 40%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 965px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+
+        &:after {
+            bottom: 40px;
+        }
+
+        img {
+            width: 70%;
+        }
+
+        div {
+            position: static;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    header div {
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.05rem;
+        }
+    }
+}
