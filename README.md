@@ -1,8 +1,6 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center" >FUTURO TECNOLOGIAS</h1>
 
-Currently, two official plugins are available:
+- Esta landing page fornece informações atualizadas sobre o mundo da tecnologia. Nela, os usuários terão acesso a uma seleção de notícias relevantes, abrangendo avanços tecnológicos, inovações, e tendências do setor. A página foi projetada para ser visualmente atraente e de fácil navegação, proporcionando uma experiência informativa para quem busca se manter atualizado no universo tecnológico.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   - As ferramentas utilizadas para este projeto foi o React.js + SASS 
