@@ -1,4 +1,4 @@
-import Robot from "../../assets/robot-image1.jpeg";
+import Robot from "../../assets/img/robot-image1.jpeg";
 import "./index.scss";
 
 export const Header = () => {

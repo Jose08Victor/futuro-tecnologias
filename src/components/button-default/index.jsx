@@ -1,7 +1,7 @@
 import "./index.scss";
 
-export const ButtonDefault = () => {
+export const ButtonDefault = ({ Link }) => {
     return (
-        <button>Consulte mais informações</button>
+        <a className="btn-default" href={ Link } target="_blank">Consulte mais informações</a>
     )
 }

@@ -1,9 +1,10 @@
-button {
+.btn-default {
+    display: inline-block;
     padding: 14px 30px;
     margin: 30px;
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
-    background-color: #fff;
+    color: #293333;
     border: 1px solid rgb(35, 204, 204);
 
     &:hover {
