@@ -1,0 +1,122 @@
+.section-3 {
+    flex-direction: column;
+    gap: 30px;
+
+    @media (max-width: 620px) {
+        margin-bottom: 50px;
+    }
+
+    .electric-truck-image-and-description {
+        display: flex;
+
+        img {
+            width: 48%;
+            height: 600px;
+            object-position: -400px 0;
+            object-fit: cover;
+
+            @media (max-width: 800px) {
+                object-position: -350px;
+            }
+
+            @media (max-width: 500px) {
+                height: 400px;
+                object-position: -270px;
+            }
+
+            @media (max-width: 375px) {
+                height: 350px;
+                object-position: -250px;
+            }
+        }
+
+        div {
+            padding: 50px;
+
+            .text-1 {
+                font-size: 19.5px;
+                letter-spacing: 1px;
+                color: #808080;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 50px;
+            }
+
+            .text-2 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .text-3 {
+                font-size: 17px;
+                line-height: 26px;
+            }
+
+            @media (max-width: 620px) {
+                .text-1 {
+                    font-size: 16.5px;
+                    margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    margin-bottom: 42px;
+                }
+
+                .text-2 {
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                }
+
+                .text-3 {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        @media (max-width: 958px) {
+            flex-direction: column;
+
+            img,
+            div {
+                width: 100%;
+            }
+
+            div {
+                padding: 50px 0 0;
+            }
+        }
+    }
+
+    .cars-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        li img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+
+                @media (max-width: 620px) {
+                    transform: none;
+                }
+            }
+        }
+
+        @media (max-width: 958px) {
+            gap: 15px;
+        }
+    }
+}
